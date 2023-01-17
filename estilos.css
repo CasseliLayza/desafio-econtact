@@ -1,0 +1,722 @@
+/*++++++++++++++++++++Estilos curso HTML+++++++++++++++++*/
+/*++++++++++++++++++++E-contact Enero 20223+++++++++++++++++*/
+/*++++++++++++++++++++++++++++Casseli layza+++++++++++++++++*/
+
+body {
+/*
+    background-image: url("./pictures/fondo.jpg");
+    background-size: cover;
+*/
+    margin: 0px auto;
+    
+}
+
+
+header {
+    background-color: rgb(33, 111, 177);
+    color: white;
+    font-size: 22px;
+    border: 1px solid black;
+    /*width: fit-content;*/
+    font-family:inherit;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+    
+}
+
+
+#s1 {
+   
+background-color: rgb(44, 153, 163);
+    
+    
+}
+
+h2 {
+    color: white;
+    font-size: 37px;
+    /*border: 1px solid black;*/
+    /*width: fit-content;*/
+    font-family:lighter;
+    text-align: center;
+    padding: 29px;
+    margin: 0 auto;
+    
+
+}
+
+#p1 {
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+    padding-bottom:  29px;
+    margin: 0 auto;
+    
+}
+
+
+#p2 {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius:10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(28, 30, 31, 0.93);
+      
+}
+
+
+
+#Contenedor1 #p2:hover {
+    color: yellow;
+    background-color: green;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px rgba(202, 250, 0, 0.91);
+}
+
+
+
+
+#p3 {
+    width: fit-content;
+    border: 1px solid green;
+    padding: 10px 27px;
+    border-radius:10px;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(22, 144, 209, 0.93);
+    
+}
+
+
+
+#p3:hover {
+  color: white;
+    background-color: black;
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px grey;
+    
+}
+
+
+
+
+input {
+    width: 13%;
+    background: yellow;
+    
+    
+}
+#img1 {
+    width: 30%;
+    border: 1px solid green;
+/*    padding: 10px 27px;*/
+    border-radius:10px;
+    box-shadow: 5px 5px 5px rgba(22, 144, 209, 0.93);
+    
+    
+    
+}
+
+#img1:hover{
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px grey;
+}
+/*
+
+++++++++++++++++++Primer dFlex seccion 1+++++++++++++++++++
+*/
+
+.dFlex1 {
+    display: flex;
+/*    border: 1px solid red;*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+/*    border-bottom: 1px solid grey;*/
+    gap: 20px;
+}
+
+
+.dFlex1 .boxF11 {
+    width: 35%;
+/*    margin: 0px 15px 0px 0px;    */
+}
+
+.dFlex1 .boxF12 {
+/*    margin: 0px 0px 0px 15px;   */
+    
+   
+    
+}
+
+
+/*Puntos de corte flex2*/
+@media (max-width: 992px){
+    .dFlex1{
+        flex-direction: column;
+        
+    }
+    
+    .dFlex1 .boxF11 {
+        width: 70%;
+        
+    }
+    
+     .dFlex1 .boxF11 #p2{
+        margin: 0 auto;
+        
+    }
+    
+   .dFlex1 #img1 {
+       
+          width: 70%;
+        
+    }
+   
+}
+    
+
+#barra {
+    width: 75%;
+    color: dimgrey;
+    
+}
+
+
+
+/*+++++++++++++++++++seccion 2+++++++++++++*/
+
+
+#s2h1 {
+    text-align: center;
+    color: #056cd3 ;
+    font-family:lighter;
+    font-weight: bold;
+    margin-top: 30px;
+  
+}
+
+#s2p1 {
+    text-align: center;
+    color: dimgrey;
+    font-family:lighter;
+    width: 90%;
+    font-size: 15px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+/*segundo dFlex seccion 2*/
+
+#s2dFlex2 {
+    display: flex;
+/*    border: 1px solid red;*/
+    justify-content: center;
+/*    align-items: center;*/
+/*    margin-top: 40px;*/
+    margin: 30px auto;
+    padding-bottom: 30px;
+/*    height: fit-content;*/
+    gap: 50px;
+    
+    
+    
+}
+
+.Flex2 {
+    border: 1px solid black;
+    background-color: rgb(33, 111, 177);
+    color: white;
+    width: 20%;
+/*    flex-grow: 1;*/
+/*    flex-basis: 25%;*/
+/*    height: fit-content;*/
+/*    flex-basis: 23%;*/
+    padding: 10px 25px;
+    text-align: center; 
+    border-radius:15px;
+    box-shadow: 5px 5px 5px rgba(22, 144, 209, 0.93);
+    
+   
+}
+
+
+#linksHistoria {
+    color: #00baff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+
+#linksHistoria:hover {
+    color: #2fff57;
+    text-decoration: none;
+    
+}
+
+
+/*Puntos de corte flex2*/
+@media (max-width: 768px){
+    #s2dFlex2{
+        flex-direction: column;
+        width: 70%;
+        
+    }
+    
+    .Flex2 {
+        margin: 0 auto;
+        width: 30%;
+      
+        
+    }
+    
+   
+}
+
+
+@media (max-width: 576px){
+    #s2dFlex2{
+        flex-direction: column;
+        width: 70%;
+        
+    }
+    
+    .Flex2 {
+        margin: 0 auto;
+        width: 50%;
+      
+        
+    }
+    
+   
+   
+}
+
+@media (max-width: 343px){
+    #s2dFlex2{
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    
+    .Flex2 {
+        margin: 0 auto;
+        width: 70%;
+      
+        
+    }
+    
+   
+   
+}
+
+/*sDf01 caja 1 segundo dFlex*/
+
+#Flex2box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+
+.Flex2box1c1 {
+/*    border: 5px solid black;*/
+    margin: 20px auto;
+    
+}
+
+#Flex2box1 #l1 {
+    background-color: white;
+    color: black;
+    font-family:lighter;
+    font-size: 11px;
+    margin: 0 auto;
+    border-radius: 9px;
+    padding: 4px;
+    
+   
+    box-shadow: 3px 3px 3px rgba(28, 30, 31, 0.93);
+    
+}
+
+#Flex2box1 #l1:hover {
+ color: white;
+    background-color: black;
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+    
+}
+
+
+
+/*sDf02 caja 3 segundo dFlex*/
+
+#Flex2box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.Flex2box1c2 {
+/*    border: 5px solid black;*/
+    margin: 20px auto;
+}
+
+#Flex2box2 #l2 {
+    background-color: white;
+    color: black;
+    font-family:lighter;
+    font-size: 11px;
+    margin: 0 auto;
+    border-radius: 9px;
+    padding: 4px;
+    
+    align-content:flex-end;
+    box-shadow: 3px 3px 3px rgba(28, 30, 31, 0.93);
+    
+}
+
+#Flex2box2 #l2:hover {
+ color: white;
+    background-color: black;
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+    
+}
+
+/*sDf03 caja 3 segundo dFlex*/
+
+#Flex2box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.Flex2box1c3 {
+/*    border: 5px solid black;*/
+    margin: 20px auto;
+}
+
+#Flex2box3 #l3 {
+    background-color: white;
+    color: black;
+    font-family:lighter;
+    font-size: 11px;
+    margin: 0 auto;
+    border-radius: 9px;
+    padding: 4px;
+    
+    align-content:flex-end;
+    box-shadow: 3px 3px 3px rgba(28, 30, 31, 0.93);
+    
+}
+
+#Flex2box3 #l3:hover {
+ color: white;
+    background-color: black;
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+}
+
+
+
+/*Tercer dFlex seccion 3+++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#contacto {
+  background-color: rgb(44, 153, 163);
+  margin-bottom: 55px;
+
+}
+
+#contactoh3 {
+    color: white;
+    font-style: normal;
+ /*   transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;*/
+    margin: 20px auto;
+    text-align: center;
+    font-family:inherit;
+    
+}
+
+#contactoh3:hover {
+
+    text-shadow: 3px 3px 1px black;
+    transition: text-shadow 2s;
+    
+}
+
+
+.canalesContacto {
+    display: flex;
+/*    border: 1px solid red;*/
+    justify-content: center;
+/*    align-items: center;*/
+/*    margin-top: 40px;*/
+    margin: 30px auto;
+   /* padding-bottom: 20px;*/
+/*    height: fit-content;*/
+    gap: 10px; 
+    padding: 20px;
+}
+
+.canles {
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(44, 153, 163);
+    width: 10%;
+/*    flex-grow: 1;*/
+/*    flex-basis: 25%;*/
+/*    height: fit-content;*/
+/*    flex-basis: 23%;*/
+    padding: 7px 25px;
+    text-align: center; 
+    border-radius:15px;
+    box-shadow: 5px 5px 5px rgba(22, 209, 151, 0.93);
+}
+
+
+#whatsApp:hover {
+    color: white;
+    background-color: rgb(10, 33, 131);
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+    text-decoration: none;
+}
+
+#facebook:hover {
+    color: white;
+    background-color: rgb(10, 33, 131);
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+}
+
+#skype:hover {
+    color: white;
+    background-color: rgb(10, 33, 131);
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+}
+
+#mail:hover {
+    color: white;
+    background-color: rgb(10, 33, 131);
+    font-style: italic;
+    transition: background-color 2s;
+    box-shadow: 5px 5px 5px #dee0e3;
+}
+
+/*control de enlaces canales*/
+#linksCanales {
+    color: #0071ff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+
+#linksCanales:hover {
+    color: greenyellow;
+    text-decoration: none;
+    
+}
+
+
+
+
+/*Puntos de corte flex3*/
+@media (max-width: 768px){
+    .canalesContacto{
+        flex-direction: column;
+        width: 70%;
+        
+    }
+    
+    .canles {
+        margin: 0 auto;
+        width: 30%;
+      
+        
+    }
+    
+   
+}
+
+@media (max-width: 343px){
+    .canalesContacto{
+        flex-direction: column;
+        width: 70%;
+        
+    }
+    
+    .canles {
+        margin: 0 auto;
+        width: 50%;
+      
+        
+    }
+    
+   
+   
+}
+  
+
+/*+++++++++++++++++++++++flex4  footer++++++++++++++++++++*/
+
+#final {
+ background-color: rgb(33, 111, 177);
+    
+
+}
+
+
+  
+.footerContacto {
+    display: flex;
+/*    border: 1px solid red;*/
+    justify-content: space-between;
+/*    align-items: center;*/
+/*    margin-top: 40px;*/
+    margin: 0 auto;
+   /* padding-bottom: 20px;*/
+/*    height: fit-content;*/
+    gap: 10px; 
+    padding: 20px;
+}
+
+.footerecontact {
+/*    border: 1px solid black;*/
+    background-color: white;
+    color: rgb(44, 44, 163);
+    width: 20%;
+/*    flex-grow: 1;*/
+/*    flex-basis: 25%;*/
+/*    height: fit-content;*/
+/*    flex-basis: 23%;*/
+    padding: 7px 25px;
+    text-align: center; 
+    border-radius:15px;
+/*    box-shadow: 5px 5px 5px rgba(22, 209, 151, 0.93);*/
+}
+
+
+
+#econtactLogo {
+     background-color: rgb(33, 111, 177);
+
+}
+
+#econtactTelefonos {
+    background-color: rgb(33, 111, 177);
+}
+
+#resdesSociales {
+     background-color: rgb(33, 111, 177);
+}
+
+
+
+#econtactTelefonos {
+    display: flex;
+   
+    flex-direction: column;
+   
+    
+    
+}
+
+.Telelefonos {
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+       
+    
+}
+
+#resdesSociales {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+ 
+    
+}
+
+.redes {
+ 
+        
+}
+
+
+/*++++++++++++++punto de corte footer+++++++++++*/
+
+
+
+
+@media (max-width: 957px){
+    .footerContacto{
+        flex-direction: column;
+        width: 70%;
+       
+    }
+    
+    .footerecontact {
+        margin: 0 auto;
+        width: 50%;
+      
+        
+    }
+    
+   
+}
+
+
+@media (max-width: 527px){
+    .footerContacto{
+        flex-direction: column;
+        width: 70%;
+       
+    }
+    
+    .footerecontact {
+        margin: 0 auto;
+        width: 70%;
+      
+        
+    }
+    
+   
+}
+
+
+
+/*++++++++++++++++++++++++++++firma+++++++++++++++++*/
+
+
+#firma {
+    background-color: dimgrey;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 1px;
+    
+}
